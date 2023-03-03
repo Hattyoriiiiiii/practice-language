@@ -4,6 +4,7 @@ import 'screens/account.dart';
 import 'screens/bookmark.dart';
 import 'screens/home.dart';
 import 'screens/notification.dart';
+import 'screens/camera.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -31,6 +32,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   static const _screens = [
     HomeScreen(),
     BookmarkScreen(),
+    CameraScreen(),
     NotificationScreen(),
     AccountScreen()
   ];
@@ -53,6 +55,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
           items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(icon: Icon(Icons.home), label: 'ホーム'),
             BottomNavigationBarItem(icon: Icon(Icons.favorite), label: 'お気に入り'),
+            BottomNavigationBarItem(icon: Icon(Icons.camera_alt_rounded), label: '撮影'), // camera_alt
             BottomNavigationBarItem(
                 icon: Icon(Icons.notifications), label: 'お知らせ'),
             BottomNavigationBarItem(icon: Icon(Icons.person), label: 'アカウント'),
